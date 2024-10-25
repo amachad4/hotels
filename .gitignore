@@ -1,0 +1,52 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.csv
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables
+.env
+
+# Optional npm cache directory
+.npm
+
+# Output of build process
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Optional log for pm2
+pids/
+*.pid
+*.seed
+
+# Temporary files and folders
+tmp/
+temp/
+
+# Coverage folder
+coverage/
+
+# Ignore package-lock.json or yarn.lock
+# Comment this out if you want to include them
+package-lock.json
+yarn.lock
