@@ -106,10 +106,12 @@
     $(function () {
       cognitoApp.Init();
       pageLoad();
-
       setAuthHeader();
       $("#userId").val(currentUserToken.currentUserId);
       $("#idToken").val(currentUserToken.idToken);
+    });
+    $(document).ready(function () {
+      $("#upload-form").attr("action", window.env.API_URL);
     });
   </script>
 </html>
