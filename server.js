@@ -18,7 +18,6 @@ app.use(
 app.get("/hotel/:page.html", (req, res) => {
   const page = req.params.page; // Get the requested page (e.g., index, admin)
   const filePath = path.join(__dirname, "hotel", `${page}.html`);
-
   // Check if the requested HTML file exists
   if (fs.existsSync(filePath)) {
     // Read the HTML file and inject environment variables
@@ -72,6 +71,7 @@ app.get("/hotel/", (req, res) => {
             IDENTITY_POOL_ID: "${process.env.IDENTITY_POOL_ID || ""}",
             COGNITO_DOMAIN: "${process.env.COGNITO_DOMAIN || ""}",
             APP_ID: "${process.env.APP_ID || ""}",
+            API_URL: "${process.env.API_URL || ""}"
           };
         </script>`
       );
