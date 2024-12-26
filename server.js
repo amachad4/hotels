@@ -36,7 +36,8 @@ app.get("/hotel/:page.html", (req, res) => {
             IDENTITY_POOL_ID: "${process.env.IDENTITY_POOL_ID || ""}",
             COGNITO_DOMAIN: "${process.env.COGNITO_DOMAIN || ""}",
             APP_ID: "${process.env.APP_ID || ""}",
-            API_URL: "${process.env.API_URL || ""}"
+            API_URL: "${process.env.API_URL || ""}",
+            API_LIST_HOTEL: "${process.env.API_LIST_HOTEL || ""}",
           };
         </script>`
       );
